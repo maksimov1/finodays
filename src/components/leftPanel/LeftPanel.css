@@ -1,0 +1,13 @@
+.left_panel {
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+}
+
+.left_panel_wrapper {
+    height: 1000px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #F5F5F5;
+    margin-bottom: 20px;
+}
