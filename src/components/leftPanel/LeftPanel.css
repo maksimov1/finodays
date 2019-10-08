@@ -5,9 +5,15 @@
 }
 
 .left_panel_wrapper {
-    height: 1000px;
+    height: 700px;
     border-radius: 8px;
     text-align: center;
     background-color: #F5F5F5;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left_panel_wrapper button {
+    margin: 20px;
 }

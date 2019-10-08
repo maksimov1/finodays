@@ -2,10 +2,14 @@ import React, {Component} from 'react';
 import {Header} from "./header/Header";
 import {Gantt} from "./gantt/Gantt";
 import {LeftPanel} from "./leftPanel/LeftPanel";
+import {ModalWindow} from "./ModalWindow";
+import {Transition, animated} from 'react-spring/renderprops';
 import "./gantt/Gantt.css"
 import "./Main.css"
 
 import HorizontalScroll from 'react-scroll-horizontal'
+import {CreateProjectModal} from "./modals/createProjectModal/CreateProjectModal";
+import {gantt} from "dhtmlx-gantt";
 
 const data = {
     data: [
@@ -23,8 +27,33 @@ export class Main extends Component {
         this.state = {
             currentZoom: 'Days',
             modifiable: true,
+            showCreateProjectModal: false,
+            newTask: null,
+            id: 100
         };
         this.toggleModifiable = this.toggleModifiable.bind(this);
+        this.handleOpenCreateProjectModal = this.handleOpenCreateProjectModal.bind(this);
+        this.handleCloseCreateProjectModal = this.handleCloseCreateProjectModal.bind(this);
+        this.addTask = this.addTask.bind(this);
+    }
+
+    handleOpenCreateProjectModal() {
+        this.setState({showCreateProjectModal: true})
+    }
+
+    handleCloseCreateProjectModal() {
+        this.setState({showCreateProjectModal: false})
+    }
+
+    addTask(task) {
+        let _id = this.state.id + 1;
+        gantt.addTask({
+            id:_id,
+            text:task.text,
+            start_date:task.start_date,
+            duration:parseInt(task.duration)
+        }, null, 1);
+        this.setState({id: _id})
     }
 
     toggleModifiable() {
@@ -54,20 +83,48 @@ export class Main extends Component {
             );
         });
         return (
-            <>
+            <div className="main">
                 <Header/>
+                <ModalWindow>
+                    <Transition
+                        native
+                        items={this.state.showCreateProjectModal}
+                        from={{
+                            opacity: 0, transform: "translateY(-1000px)",
+                        }}
+                        enter={{
+                            opacity: 1, transform: "translateY(0px)",
+                        }}
+                        leave={{
+                            opacity: 0, transform: "translateY(-1000px)",
+                        }}
+                    >
+                        {show => show && (props =>
+                            <animated.div style={props} className="modal_container">
+                                <CreateProjectModal
+                                    closeCreateProjectModal={this.handleCloseCreateProjectModal}
+                                    handler={this.state.handler}
+                                    addTask={this.addTask}
+                                />
+                            </animated.div>)}
+                    </Transition>
+                </ModalWindow>
                 <div className="main_container">
-                    <LeftPanel toggleModifiable={this.toggleModifiable}/>
+                    <LeftPanel
+                        openCreateProjectModal={this.handleOpenCreateProjectModal}
+                        toggleModifiable={this.toggleModifiable}/>
                     <div className="gantt-container">
                         { zoomRadios }
                         <Gantt
+                            ref={gantt => (this.gantt = gantt)}
                             tasks={data}
                             zoom={this.state.currentZoom}
+                            newTask={this.state.newTask}
                             modifiable={this.state.modifiable}
                         />
                     </div>
                 </div>
-            </>
+            </div>
         );
     }
 }

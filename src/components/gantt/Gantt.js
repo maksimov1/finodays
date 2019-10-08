@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { gantt } from 'dhtmlx-gantt';
 import 'dhtmlx-gantt/codebase/dhtmlxgantt.css';
+import 'dhtmlx-gantt/codebase/ext/dhtmlxgantt_auto_scheduling';
 
 export class Gantt extends Component {
 
@@ -10,6 +11,7 @@ export class Gantt extends Component {
     /**
      * applies one of the predefined settings of the time scale
      */
+
     setZoom(value) {
         switch (value) {
             case 'Days':
@@ -68,19 +70,16 @@ export class Gantt extends Component {
     }
 
     componentDidMount() {
-        gantt.config.start_date = new Date(2019, 1, 1);
-        gantt.config.end_date = new Date(2019, 12, 31);
         gantt.config.xml_date = "%Y-%m-%d %H:%i";
+        gantt.config.auto_scheduling = true;
+        gantt.config.auto_scheduling_strict = true;
+        gantt.config.auto_scheduling_compatibility = true;
         gantt.config.show_grid = false;
+        gantt.config.start_date = new Date(2019, 0, 1);
+        gantt.config.end_date = new Date(2019, 11, 32);
         const { tasks } = this.props;
         gantt.init(this.ganttContainer);
         this.initGanttDataProcessor();
-        gantt.addTask({
-            id:10,
-            text:"Task #5",
-            start_date:"2019-04-13",
-            duration:2
-        }, null, 1);
         gantt.parse(tasks);
     }
 
@@ -99,7 +98,7 @@ export class Gantt extends Component {
         return (
             <div
                 ref={(input) => { this.ganttContainer = input }}
-                style={{ height: '1000px' }}
+                style={{ height: '700px' }}
             />
         );
 

@@ -19,6 +19,7 @@ export class LeftPanel extends Component {
             <div className="left_panel">
                 <div className="left_panel_wrapper">
                     <button onClick={this.handleToggle}>песочница</button>
+                    <button onClick={this.props.openCreateProjectModal}>создать подряд</button>
                 </div>
             </div>
         );

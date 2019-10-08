@@ -7,13 +7,13 @@ export class CreateProjectModal extends Component {
 
         this.state = {
             name: '',
-            price: 0,
+            price: '',
             startDate: new Date(),
-            endDate: new Date()
+            duration: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.addTask = this.addTask.bind(this);
     }
 
     handleChange(event) {
@@ -25,33 +25,71 @@ export class CreateProjectModal extends Component {
         });
     }
 
-    handleSubmit(event) {
-        //TODO
-        event.preventDefault();
+    addTask() {
+        this.props.addTask({
+            text: this.state.name,
+            start_date: this.state.startDate,
+            duration: this.state.duration
+        });
+        this.props.closeCreateProjectModal();
     }
 
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Название:
-                    <input type="text" name="name" value={this.state.name} onChange={this.handleChange} />
-                </label>
-                <label>
-                    Дата начала:
-                    <input type="date" name="startDate" value={this.state.startDate} onChange={this.handleChange} />
-                </label>
-                <label>
-                    Дата окончания:
-                    <input type="date" name="endDate" value={this.state.endDate} onChange={this.handleChange} />
-                </label>
-                <label>
-                    Стоимость:
-                    <input type="number" name="price" value={this.state.price} onChange={this.handleChange} />
-                </label>
-                <input type="submit" value="Отправить" />
-            </form>
+            <div className="new_request_modal">
+                <div className="modal_wrapper">
+                    <div className="modal_title">СОЗДАТЬ ПОДРЯД</div>
+                    <form onSubmit={this.handleSubmit}>
+                        <input
+                            className="text_input"
+                            name="name"
+                            placeholder="Название подряда"
+                            type="text"
+                            value={this.state.name}
+                            onChange={this.handleChange}
+                            required/>
+                        <div className="crt_pr_date">
+                            <div className="crt_pr_date_label">Дата Начала:</div>
+                            <input
+                                className="date_input"
+                                name="startDate"
+                                type="date"
+                                min="2019-01-01" max="2019-12-31"
+                                value={this.state.startDate}
+                                onChange={this.handleChange}
+                                required/>
+                        </div>
+                        <input
+                            className="text_input"
+                            name="duration"
+                            placeholder="Срок выполнения"
+                            type="text"
+                            value={this.state.duration}
+                            onChange={this.handleChange}
+                            required/>
+                        <input
+                            className="text_input"
+                            name="price"
+                            placeholder="Стоимость"
+                            type="text"
+                            value={this.state.price}
+                            onChange={this.handleChange}
+                            required/>
+                    </form>
+                    <div className="modal_btn">
+                        <button onClick={this.props.closeCreateProjectModal}
+                                className="cancel_btn"
+                        >Отменить
+                        </button>
+                        <button
+                            className="new_request_btn"
+                            onClick={this.addTask}
+                        >Создать
+                        </button>
+                    </div>
+                </div>
+            </div>
         );
     }
 }
