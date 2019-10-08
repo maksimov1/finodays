@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { gantt } from 'dhtmlx-gantt';
 import 'dhtmlx-gantt/codebase/dhtmlxgantt.css';
 import 'dhtmlx-gantt/codebase/ext/dhtmlxgantt_auto_scheduling';
+import 'dhtmlx-gantt/codebase/ext/dhtmlxgantt_critical_path';
 
 export class Gantt extends Component {
 
@@ -71,6 +72,7 @@ export class Gantt extends Component {
 
     componentDidMount() {
         gantt.config.xml_date = "%Y-%m-%d %H:%i";
+        gantt.config.highlight_critical_path = true;
         gantt.config.auto_scheduling = true;
         gantt.config.auto_scheduling_strict = true;
         gantt.config.auto_scheduling_compatibility = true;

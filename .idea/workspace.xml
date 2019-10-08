@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a99be01d-aaab-475a-b49b-f3c4af59d942" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/blockchain/BlockchainHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blockchain/BlockchainHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/createProjectModal/CreateProjectModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/createProjectModal/CreateProjectModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gantt/Gantt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gantt/Gantt.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -130,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570512119993</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="blockchain integration">
+      <created>1570528902763</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570528902763</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,6 +156,7 @@
     <MESSAGE value="ochen slozhno pridumat commit message" />
     <MESSAGE value="ochen slozhno pridumat commit message op'at" />
     <MESSAGE value="minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor fixes" />
+    <MESSAGE value="blockchain integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="blockchain integration" />
   </component>
 </project>
