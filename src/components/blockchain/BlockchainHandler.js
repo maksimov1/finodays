@@ -129,4 +129,12 @@ export class BlockchainHandler {
           status : arr[7]
         };
     }
+
+    addTask(name, description, timeStart, timeEnd, money, workerName){
+        console.log(this.#address);
+        return this.#contract.methods.addTask(name, description, timeStart, timeEnd, money, workerName).send({
+            from : this.#address,
+            value : 0
+        })
+    }
 }

@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a99be01d-aaab-475a-b49b-f3c4af59d942" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/leftPanel/LeftPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leftPanel/LeftPanel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/blockchain/BlockchainHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/blockchain/BlockchainHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/createProjectModal/CreateProjectModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/createProjectModal/CreateProjectModal.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,6 +100,7 @@
       <updated>1570457316505</updated>
       <workItem from="1570457318904" duration="5720000" />
       <workItem from="1570479024952" duration="26874000" />
+      <workItem from="1570524539878" duration="1333000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1570459182822</created>
@@ -119,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570503230649</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="minor fixes">
+      <created>1570512119993</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570512119993</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +154,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="ochen slozhno pridumat commit message" />
     <MESSAGE value="ochen slozhno pridumat commit message op'at" />
-    <option name="LAST_COMMIT_MESSAGE" value="ochen slozhno pridumat commit message op'at" />
+    <MESSAGE value="minor fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor fixes" />
   </component>
 </project>

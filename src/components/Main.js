@@ -11,6 +11,7 @@ import HorizontalScroll from 'react-scroll-horizontal'
 import {CreateProjectModal} from "./modals/createProjectModal/CreateProjectModal";
 import {MonthlyPaymentsModal} from "./modals/monthlyPaymentsModal/MonthlyPaymentsModal";
 import {gantt} from "dhtmlx-gantt";
+import {BlockchainHandler} from "./blockchain/BlockchainHandler";
 
 const data = {
     data: [
@@ -82,6 +83,12 @@ export class Main extends Component {
         });
     };
 
+    componentDidMount() {
+        let handler = new BlockchainHandler();
+        handler.loadTasks().then((val) => console.log(val));
+        this.handler = handler;
+    }
+
     render() {
         const zoomRadios = ['Days', 'Months'].map((value) => {
             const isActive = this.props.zoom === value;
@@ -116,6 +123,7 @@ export class Main extends Component {
                             <animated.div style={props} className="modal_container">
                                 <CreateProjectModal
                                     closeCreateProjectModal={this.handleCloseCreateProjectModal}
+                                    handler={this.handler}
                                     addTask={this.addTask}
                                 />
                             </animated.div>)}

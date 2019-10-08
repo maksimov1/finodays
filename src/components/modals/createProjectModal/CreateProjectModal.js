@@ -5,6 +5,8 @@ export class CreateProjectModal extends Component {
     constructor(props) {
         super(props);
 
+        this.handler = props.handler;
+
         this.state = {
             name: '',
             price: '',
@@ -31,9 +33,14 @@ export class CreateProjectModal extends Component {
             start_date: this.state.startDate,
             duration: this.state.duration
         });
+        this.pushTask();
         this.props.closeCreateProjectModal();
     }
 
+    pushTask() {
+        this.handler.getMetamaskAddress().then(() =>
+            this.handler.addTask("Tail", "Nice tail", 0, 1, 999, "Alexey"));
+    }
 
     render() {
         return (
