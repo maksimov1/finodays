@@ -77,7 +77,7 @@ export class Gantt extends Component {
         gantt.config.auto_scheduling_strict = true;
         gantt.config.auto_scheduling_compatibility = true;
         gantt.config.show_grid = false;
-        gantt.config.start_date = new Date(2019, 0, 1);
+        gantt.config.start_date = new Date(2019, 0, 19);
         gantt.config.end_date = new Date(2019, 11, 32);
         const { tasks } = this.props;
         gantt.init(this.ganttContainer);
@@ -100,7 +100,7 @@ export class Gantt extends Component {
         return (
             <div
                 ref={(input) => { this.ganttContainer = input }}
-                style={{ height: '800px' }}
+                style={{ height: '1100px' }}
             />
         );
 

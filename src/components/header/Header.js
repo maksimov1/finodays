@@ -8,7 +8,7 @@ export class Header extends Component {
             <header className="header">
                 <div className="header_container">
                     <img src={qiwi} alt="Логотип Киви"/>
-                    <div className="test">ПРИКАЛЮХА</div>
+                    <div className="test">ПОДРЯД</div>
                     <div className="nav_buttons">
                         <div className="btn_inactive">Гензаказчик</div>
                         <div className="btn_active">Генподрядчик</div>

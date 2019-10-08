@@ -8,7 +8,6 @@ import "./gantt/Gantt.css"
 import "./Main.css"
 import classNames from "classnames";
 
-import HorizontalScroll from 'react-scroll-horizontal'
 import {CreateProjectModal} from "./modals/createProjectModal/CreateProjectModal";
 import {MonthlyPaymentsModal} from "./modals/monthlyPaymentsModal/MonthlyPaymentsModal";
 import "./dhtmlxgantt_material.css";
@@ -17,11 +16,32 @@ import {BlockchainHandler} from "./blockchain/BlockchainHandler";
 
 const data = {
     data: [
-        { id: 1,text: 'Task #1', color: "red", start_date: '2019-01-05', duration: 3, progress: 0.0 },
-        { id: 2,text: 'Task #2',color: "yellow", start_date: '2019-01-08', duration: 3, progress: 0.0 }
+        { id: 1,text: 'Самолёт 1000000₽', color: "grey", start_date: '2019-03-30', duration: 30, progress: 0.0 },
+        { id: 2,text: 'Крыло 100₽', color: "grey", start_date: '2019-01-27', duration: 3, progress: 0.0 },
+        { id: 3,text: 'Крыло 100₽', color: "grey", start_date: '2019-01-27', duration: 3, progress: 0.0 },
+        { id: 4,text: 'Винт 33333₽', color: "cornflowerblue", start_date: '2019-01-25', duration: 5, progress: 0.56 },
+        { id: 5,text: 'Двигатель 1020₽', color: "green", start_date: '2019-01-25', duration: 4, progress: 0.0 },
+        { id: 6,text: 'Шасси 1100₽', color: "green", start_date: '2019-01-25', duration: 2, progress: 0.0 },
+        { id: 7,text: 'Фюзеляж 10670₽', color: "grey", start_date: '2019-01-25', duration: 4, progress: 0.0 },
+        { id: 8,text: 'Электроника 100₽ штраф 33₽', color: "red", start_date: '2019-01-22', duration: 6, progress: 0.3 },
+        { id: 9,text: 'Сидения 10330₽', color: "green", start_date: '2019-01-24', duration: 2, progress: 0.0 },
+        { id: 10,text: 'Салон 1030₽', color: "cornflowerblue", start_date: '2019-01-25', duration: 6, progress: 0.1 },
+        { id: 11,text: 'Поставка заклепок 10₽', color: "cornflowerblue", start_date: '2019-01-25', duration: 4, progress: 0.95 },
+        { id: 12,text: 'Поставка железа 1030₽', color: "green", start_date: '2019-01-25', duration: 4, progress: 1 }
     ],
     links: [
-        { id: 1, source: 1, target: 2, type: '0' }
+        {id: 1, source: 2, target: 1, type: '0'},
+        {id: 2, source: 3, target: 1, type: '0'},
+        {id: 3, source: 4, target: 1, type: '0'},
+        {id: 4, source: 5, target: 1, type: '0'},
+        {id: 5, source: 6, target: 1, type: '0'},
+        {id: 6, source: 7, target: 1, type: '0'},
+        {id: 7, source: 8, target: 7, type: '0'},
+        {id: 8, source: 10, target: 7, type: '0'},
+        {id: 9, source: 9, target: 10, type: '0'},
+        {id: 10, source: 11, target: 3, type: '0'},
+        {id: 11, source: 11, target: 2, type: '0'},
+        {id: 11, source: 12, target: 2, type: '0'}
     ]
 };
 
@@ -121,6 +141,7 @@ export class Main extends Component {
                             </animated.div>)}
                     </Transition>
                 </ModalWindow>
+
                 <ModalWindow>
                     <Transition
                         native

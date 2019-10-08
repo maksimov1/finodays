@@ -41,7 +41,7 @@ export class MonthlyPaymentsModal extends Component {
                     <div className="table_title_row">
                         <div className="month_with_num">
                             <div>Январь</div>
-                            <div className="table_num">0</div>
+                            <div className="table_num">350₽</div>
                         </div>
                         <div className="month_with_num">
                             <div>Февраль</div>
@@ -49,7 +49,7 @@ export class MonthlyPaymentsModal extends Component {
                         </div>
                         <div className="month_with_num">
                             <div>Март</div>
-                            <div className="table_num">0</div>
+                            <div className="table_num">7950₽</div>
                         </div>
                         <div className="month_with_num">
                             <div>Апрель</div>
@@ -57,11 +57,11 @@ export class MonthlyPaymentsModal extends Component {
                         </div>
                         <div className="month_with_num">
                             <div>Май</div>
-                            <div className="table_num">0</div>
+                            <div className="table_num">0₽</div>
                         </div>
                         <div className="month_with_num">
                             <div>Июнь</div>
-                            <div className="table_num">0</div>
+                            <div className="table_num">3000₽</div>
                         </div>
                         <div className="month_with_num">
                             <div>Июль</div>
@@ -77,7 +77,7 @@ export class MonthlyPaymentsModal extends Component {
                         </div>
                         <div className="month_with_num">
                             <div>Октябрь</div>
-                            <div className="table_num">0</div>
+                            <div className="table_num">9999₽</div>
                         </div>
                         <div className="month_with_num">
                             <div>Ноябрь</div>

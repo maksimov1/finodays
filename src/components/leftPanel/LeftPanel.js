@@ -24,7 +24,7 @@ export class LeftPanel extends Component {
                 <div className="left_panel_wrapper">
                     <div className="user_profile">
                         <img src={worker} alt="Логотип Worker"/>
-                        <div>Аркадий Ротенберг</div>
+                        <div>Самолётстрой</div>
                     </div>
                     <div className="buttons_group">
                         <div className="payments_button">
