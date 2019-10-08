@@ -37,23 +37,62 @@ export class MonthlyPaymentsModal extends Component {
         return (
             <div className="monthly_payments_modal">
                 <div className="monthly_payments_modal_wrapper">
-                    <div className="table_header">Помесячные платы</div>
+                    <div className="modal_title">Помесячные платы</div>
                     <div className="table_title_row">
-                        <div>Январь</div>
-                        <div>Февраль</div>
-                        <div>Март</div>
-                        <div>Апрель</div>
-                        <div>Май</div>
-                        <div>Июнь</div>
-                        <div>Июль</div>
-                        <div>Август</div>
-                        <div>Сентябрь</div>
-                        <div>Октябрь</div>
-                        <div>Ноябрь</div>
-                        <div>Декабрь</div>
+                        <div className="month_with_num">
+                            <div>Январь</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Февраль</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Март</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Апрель</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Май</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Июнь</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Июль</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Август</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Сентябрь</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Октябрь</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Ноябрь</div>
+                            <div className="table_num">0</div>
+                        </div>
+                        <div className="month_with_num">
+                            <div>Декабрь</div>
+                            <div className="table_num">0</div>
+                        </div>
                     </div>
-                    <div className="table_content">
-                        {this.createTableContent().map(sum => <div>{sum}</div>)}
+                    <div className="modal_btn">
+                        <button onClick={this.props.closeMonthlyPaymentsModal}
+                                className="cancel_btn"
+                        >ОК
+                        </button>
                     </div>
                 </div>
             </div>

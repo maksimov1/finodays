@@ -1,18 +1,26 @@
+.modal_container {
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+}
+
 .table_title_row {
     display: flex;
     width: 900px;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .table_content {
     display: flex;
     width: 900px;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .table_title_row > div {
+    font-size: 19px;
     text-align: left;
-    width: 70px;
 }
 
 .table_content > div {
@@ -33,7 +41,7 @@
     transform: translate(-50%, -50%);
     width: 1000px;
     max-width: 100%;
-    height: 450px;
+    height: 300px;
     /*max-height: 100%;*/
     outline: none;
 }
@@ -48,4 +56,17 @@
     bottom: 0;
     margin: 5%;
     overflow: auto;
+}
+
+.cancel_btn {
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    cursor: pointer;
+    background-color: #FFB529;
+    color: #FFFFFF;
+    border-radius: 4px;
+    width: 150px;
+    font-size: 1.5em;
+    height: 3em;
+    outline: none;
 }
