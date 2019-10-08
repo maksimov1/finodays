@@ -1,42 +1,154 @@
 .left_panel {
     box-sizing: border-box;
-    width: 25%;
+    width: 350px;
     height: 100%;
 }
 
+
 .left_panel_wrapper {
-    height: 700px;
+    height: 300px;
     border-radius: 8px;
     text-align: center;
-    background-color: #F5F5F5;
+    background-color: #FFFFFF;
+    margin-top: 20px;
+    margin-left: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
+}
+
+.user_profile {
+    width: 310px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.user_profile img {
+    width: 70px;
+    height: auto;
+}
+
+.user_profile div {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    color: #FF8400;
+    margin-left: 20px;
+    font-size: 1.3em;
 }
 
 .left_panel_wrapper button {
     margin: 20px;
 }
 
+.user_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.user_button button {
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+    background-color: #FF8400;
+    color: #FFFFFF;
+    border-radius: 4px;
+    width: 100%;
+    height: 3em;
+    font-size: 1.2em;
+    font-weight: 600;
+    user-select: none;
+}
+
+.user_button button:focus{
+    outline: none;
+}
+
+.payments_button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons_group {
+    display: flex;
+    align-items: center;
+}
+
+.sim_label {
+    font-size: 1.2em;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.sim {
+    transition: all 300ms;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: solid 3px black;
+    color: #000000;
+    border-radius: 25px;
+    width: 32px;
+    height: 2em;
+    font-size: 1em;
+    font-weight: 600;
+    user-select: none;
+}
+
+.sim:focus{
+    outline: none;
+}
+
+.sim.active {
+    cursor: pointer;
+    background-color: #FF8400;
+    border: solid 3px black;
+    color: #000000;
+    border-radius: 25px;
+    width: 32px;
+    height: 2em;
+    font-size: 1em;
+    font-weight: 600;
+    user-select: none;
+}
+
+.payments_button button {
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border: solid 1px black;
+    color: #000000;
+    border-radius: 25px;
+    width: 100%;
+    height: 2em;
+    font-size: 1em;
+    font-weight: 600;
+    user-select: none;
+}
+
+.payments_button button:focus{
+    outline: none;
+}
+
+
 .pending_marker {
     width: 60px;
     height: 20px;
-    background: cornflowerblue;
+    background: grey;
     border-radius: 40px;
-    border: 2px #555555 solid;
 }
 
 .in_progress_marker {
     width: 60px;
     height: 20px;
-    border: 2px #555555 solid;
-    background: yellow;
+    background: cornflowerblue;
     border-radius: 40px;
 }
 
 .done_marker {
     width: 60px;
-    border: 2px #555555 solid;
     height: 20px;
     background: green;
     border-radius: 40px;
@@ -46,7 +158,6 @@
     width: 60px;
     height: 20px;
     background: red;
-    border: 2px #555555 solid;
     border-radius: 40px;
 }
 
@@ -63,10 +174,12 @@
 .in_progress_container {
     display: flex;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .fuck_uped_container {
     display: flex;
+    align-items: center;
 }
 
 .fuck_uped_text {
@@ -74,7 +187,7 @@
     padding-left: 10px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .done_text {
@@ -82,7 +195,7 @@
     padding-left: 10px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .in_progress_text {
@@ -90,7 +203,7 @@
     padding-left: 10px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .pending_text {
@@ -98,13 +211,6 @@
     padding-left: 10px;
     width: 100%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
-
-.legend {
-    display: block;
-    padding-left: 15px;
-    width: 200px;
-    height: 300px;
-}

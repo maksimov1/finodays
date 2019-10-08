@@ -31,7 +31,8 @@ export class CreateProjectModal extends Component {
         this.props.addTask({
             text: this.state.name,
             start_date: this.state.startDate,
-            duration: this.state.duration
+            duration: this.state.duration,
+            money: this.state.price
         });
         this.pushTask();
         this.props.closeCreateProjectModal();
@@ -84,7 +85,6 @@ export class CreateProjectModal extends Component {
                                 value={this.state.price}
                                 onChange={this.handleChange}
                                 required/>
-                            <div className="pr_price_label">₽</div>
                         </div>
 
                     </form>

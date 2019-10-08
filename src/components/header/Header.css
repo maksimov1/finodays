@@ -1,11 +1,10 @@
 .header {
-    background-color: #FDFDFD;
+    background-color: #FFFFFF;
     box-sizing: border-box;
-    height: 70px;
+    height: 60px;
     /*max-width: 1366px;*/
     user-select: none;
-    box-shadow: 0 2px 6px -6px #222;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .header_container {
@@ -19,7 +18,7 @@
 }
 
 .header_container img {
-    width: 120px;
+    width: 80px;
     margin-right: 10px;
 }
 
@@ -34,19 +33,24 @@
 
 .nav_buttons {
     display: flex;
-    flex-basis: 30%;
+    flex-basis: 40%;
     flex-direction: row;
     justify-content: space-around;
 }
 
-.nav_buttons div {
-    font-family: 'Open Sans', sans-serif;
+.btn_inactive {
+    font-family: 'Fira Sans', sans-serif;
+    cursor: pointer;
+    font-size: 1.1em;
     letter-spacing: 1px;
     margin-right: 5px;
 }
 
-.nav_buttons div:hover {
+.btn_active {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.1em;
     cursor: pointer;
+    letter-spacing: 1px;
+    margin-right: 5px;
     color: #FF8400;
-    transition: all 300ms ease;
 }

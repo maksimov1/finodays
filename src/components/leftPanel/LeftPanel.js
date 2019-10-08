@@ -1,43 +1,43 @@
 import React, {Component} from 'react';
 import "./LeftPanel.css"
+import worker from "./worker.svg";
+import classNames from "classnames";
 
 export class LeftPanel extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            modifiable: true
+            modifiable: false
         };
         this.handleToggle = this.handleToggle.bind(this);
     }
 
     handleToggle() {
+        let temp = this.state.modifiable;
         this.props.toggleModifiable();
+        this.setState({modifiable: !temp})
     }
 
     render() {
         return (
             <div className="left_panel">
                 <div className="left_panel_wrapper">
-                    <button onClick={this.handleToggle}>песочница</button>
-                    <button onClick={this.props.openCreateProjectModal}>создать подряд</button>
-                    <button onClick={this.props.openMonthlyPaymentsModal}>показать</button>
-                    <div className="legend">
-                        <div className="pending_container">
-                            <div className="pending_marker"></div>
-                            <div className="pending_text">В ожидании</div>
+                    <div className="user_profile">
+                        <img src={worker} alt="Логотип Worker"/>
+                        <div>Аркадий Ротенберг</div>
+                    </div>
+                    <div className="buttons_group">
+                        <div className="payments_button">
+                            <button onClick={this.props.openMonthlyPaymentsModal}>Платежи</button>
                         </div>
-                        <div className="in_progress_container">
-                            <div className="in_progress_marker"></div>
-                            <div className="in_progress_text">Исполняется</div>
-                        </div>
-                        <div className="done_container">
-                            <div className="done_marker"></div>
-                            <div className="done_text">Сделано</div>
-                        </div>
-                        <div className="fuck_uped_container">
-                            <div className="fuck_uped_marker"></div>
-                            <div className="fuck_uped_text">Просрочено</div>
-                        </div>
+                        <div className="sim_label">Симуляция:</div>
+                        <button className={classNames("sim", {
+                            active: this.state.modifiable === true,
+                        })} onClick={this.handleToggle}/>
+                    </div>
+
+                    <div className="user_button">
+                        <button onClick={this.props.openCreateProjectModal}>Создать подряд</button>
                     </div>
                 </div>
             </div>

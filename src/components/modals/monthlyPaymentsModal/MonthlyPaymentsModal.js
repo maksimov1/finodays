@@ -37,7 +37,7 @@ export class MonthlyPaymentsModal extends Component {
         return (
             <div className="monthly_payments_modal">
                 <div className="monthly_payments_modal_wrapper">
-                    <div className="modal_title">Помесячные платы</div>
+                    <div className="modal_title">Помесячные платежи</div>
                     <div className="table_title_row">
                         <div className="month_with_num">
                             <div>Январь</div>

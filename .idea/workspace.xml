@@ -2,8 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99be01d-aaab-475a-b49b-f3c4af59d942" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/header/qiwi.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/header/worker.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/leftPanel/worker.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gantt-npm/codebase/skins/dhtmlxgantt_material.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dhtmlxgantt_material.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gantt-npm/samples/02_extensions/18_linked_tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/gantt-npm/samples/02_extensions/18_linked_tasks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gantt-npm/samples/05_lightbox/13_resources.html" beforeDir="false" afterPath="$PROJECT_DIR$/gantt-npm/samples/05_lightbox/13_resources.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gantt-npm/samples/06_skins/09_material.html" beforeDir="false" afterPath="$PROJECT_DIR$/gantt-npm/samples/06_skins/09_material.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gantt/Gantt.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gantt/Gantt.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/gantt/Gantt.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gantt/Gantt.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/leftPanel/LeftPanel.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leftPanel/LeftPanel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/leftPanel/LeftPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/leftPanel/LeftPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/createProjectModal/CreateProjectModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/createProjectModal/CreateProjectModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/createProjectModal/CreateProjectModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/createProjectModal/CreateProjectModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modals/monthlyPaymentsModal/MonthlyPaymentsModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/test/Test.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +73,9 @@
     <key name="OPEN_URL_DIALOG">
       <recent name="https://github.com/DHTMLX/react-gantt-demo.git" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1\Desktop\finodays\src\components" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\1\Desktop\finodays\src\components" />
     </key>
@@ -93,8 +118,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570457316505</updated>
       <workItem from="1570457318904" duration="5720000" />
-      <workItem from="1570479024952" duration="26874000" />
-      <workItem from="1570524539878" duration="1333000" />
+      <workItem from="1570479024952" duration="40094000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1570459182822</created>
@@ -117,21 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570503230649</updated>
     </task>
-    <task id="LOCAL-00004" summary="minor fixes">
-      <created>1570512119993</created>
+    <task id="LOCAL-00004" summary="another day another modal">
+      <created>1570506106277</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1570512119993</updated>
+      <updated>1570506106277</updated>
     </task>
-    <task id="LOCAL-00005" summary="blockchain integration">
-      <created>1570528902763</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1570528902763</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,8 +172,7 @@
     <MESSAGE value="init" />
     <MESSAGE value="ochen slozhno pridumat commit message" />
     <MESSAGE value="ochen slozhno pridumat commit message op'at" />
-    <MESSAGE value="minor fixes" />
-    <MESSAGE value="blockchain integration" />
-    <option name="LAST_COMMIT_MESSAGE" value="blockchain integration" />
+    <MESSAGE value="another day another modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="another day another modal" />
   </component>
 </project>

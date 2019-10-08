@@ -100,7 +100,7 @@ export class Gantt extends Component {
         return (
             <div
                 ref={(input) => { this.ganttContainer = input }}
-                style={{ height: '700px' }}
+                style={{ height: '800px' }}
             />
         );
 

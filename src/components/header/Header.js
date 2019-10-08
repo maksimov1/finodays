@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import qiwi from "./qiwi.svg"
 import './Header.css';
 
 export class Header extends Component {
@@ -6,13 +7,12 @@ export class Header extends Component {
         return (
             <header className="header">
                 <div className="header_container">
-                    <img src="https://static.qiwi.com/img/qiwi_com/header/qiwi-wallet-logo.svg" alt="Логотип Киви"/>
+                    <img src={qiwi} alt="Логотип Киви"/>
                     <div className="test">ПРИКАЛЮХА</div>
                     <div className="nav_buttons">
-                        <div>ТУТ</div>
-                        <div>МБ БУДУТ</div>
-                        <div>КАКИЕ-ТО</div>
-                        <div>КНОПКИ</div>
+                        <div className="btn_inactive">Гензаказчик</div>
+                        <div className="btn_active">Генподрядчик</div>
+                        <div className="btn_inactive">Субподрядчик</div>
                     </div>
                 </div>
             </header>
