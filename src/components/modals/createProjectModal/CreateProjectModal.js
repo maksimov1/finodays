@@ -68,14 +68,18 @@ export class CreateProjectModal extends Component {
                             value={this.state.duration}
                             onChange={this.handleChange}
                             required/>
-                        <input
-                            className="text_input"
-                            name="price"
-                            placeholder="Стоимость"
-                            type="text"
-                            value={this.state.price}
-                            onChange={this.handleChange}
-                            required/>
+                        <div className="pr_price_input">
+                            <input
+                                className="text_input"
+                                name="price"
+                                placeholder="Стоимость"
+                                type="text"
+                                value={this.state.price}
+                                onChange={this.handleChange}
+                                required/>
+                            <div className="pr_price_label">₽</div>
+                        </div>
+
                     </form>
                     <div className="modal_btn">
                         <button onClick={this.props.closeCreateProjectModal}

@@ -17,3 +17,94 @@
 .left_panel_wrapper button {
     margin: 20px;
 }
+
+.pending_marker {
+    width: 60px;
+    height: 20px;
+    background: cornflowerblue;
+    border-radius: 40px;
+    border: 2px #555555 solid;
+}
+
+.in_progress_marker {
+    width: 60px;
+    height: 20px;
+    border: 2px #555555 solid;
+    background: yellow;
+    border-radius: 40px;
+}
+
+.done_marker {
+    width: 60px;
+    border: 2px #555555 solid;
+    height: 20px;
+    background: green;
+    border-radius: 40px;
+}
+
+.fuck_uped_marker {
+    width: 60px;
+    height: 20px;
+    background: red;
+    border: 2px #555555 solid;
+    border-radius: 40px;
+}
+
+.pending_container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.done_container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.in_progress_container {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.fuck_uped_container {
+    display: flex;
+}
+
+.fuck_uped_text {
+    text-align: left;
+    padding-left: 10px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+.done_text {
+    text-align: left;
+    padding-left: 10px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+.in_progress_text {
+    text-align: left;
+    padding-left: 10px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+.pending_text {
+    text-align: left;
+    padding-left: 10px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+
+.legend {
+    display: block;
+    padding-left: 15px;
+    width: 200px;
+    height: 300px;
+}
